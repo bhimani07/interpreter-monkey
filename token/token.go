@@ -34,7 +34,7 @@ const (
 
 	// Paranthesis
 	LPAREN = "("
-	RPAREN = "("
+	RPAREN = ")"
 	LBRACE = "{"
 	RBRACE = "}"
 
