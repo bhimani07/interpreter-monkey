@@ -129,7 +129,7 @@ func newToken(tt token.TokenType, ch byte) token.Token {
 }
 
 func isLetter(ch byte) bool {
-	return ('a' <= ch && ch <= 'z') || ('A' <= ch && ch <= 'B') || ch == '-'
+	return ('a' <= ch && ch <= 'z') || ('A' <= ch && ch <= 'B') || ch == '_'
 }
 
 func isDigit(ch byte) bool {
