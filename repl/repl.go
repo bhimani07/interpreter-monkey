@@ -4,6 +4,8 @@ import (
 	"bufio"
 	"fmt"
 	"io"
+	"os"
+	"strings"
 
 	"monkey/evaluator"
 	"monkey/lexer"
@@ -25,6 +27,10 @@ func Start(in io.Reader, out io.Writer) {
 		}
 
 		line := scanner.Text()
+
+		if strings.ToLower(line) == "exit" {
+			os.Exit(0)
+		}
 
 		l := lexer.New(line)
 		p := parser.New(l)
